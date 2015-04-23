@@ -19,7 +19,10 @@ git submodule init && git submodule update
 3. Minify the slickgrid js files you want into one file, something like:
 ```
 cd src
-uglifyjs SlickGrid/slick.core.js SlickGrid/slick.grid.js SlickGrid/slick.dataview.js SlickGrid/controls/slick.pager.js -o slickgrid.core-grid-dataview-pager.min.js
+uglifyjs SlickGrid/slick.core.js SlickGrid/slick.grid.js \
+  SlickGrid/slick.dataview.js SlickGrid/controls/slick.pager.js \
+  SlickGrid/lib/jquery-1.7.min.js SlickGrid/lib/jquery.event.drag-2.2.js \
+  -o slick.core-grid-dataview-pager-jquery-jqdrag.min.js
 ```
 
 4. Update `src/deps.cljs` to use the file you just created, and possibly `project.clj` with a package name that you can push to.
