@@ -4,6 +4,13 @@ Bundling https://github.com/mleibman/SlickGrid as a jar.
 I tried to do this using [cljsjs and boot](https://github.com/cljsjs/packages/wiki/Creating-Packages), but failed, and fell back to using [uglify.js](http://lisperator.net/uglifyjs/) and straight up `deps.cljs`.
 I have used the namespace `cljsjs.slickgrid` as what the installation "provides", because I hope eventually this ends up in [cljsjs](http://cljsjs.github.io)
 
+### Version
+```
+[prabhasp/slickgrid-cljs "0.0.1"]
+```
+
+## Dev
+
 To re-package a slightly different bunch of slickgrid dependencies, do the following:
 
 1. Install uglifyjs
