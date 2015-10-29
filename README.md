@@ -6,7 +6,7 @@ I have used the namespace `cljsjs.slickgrid` as what the installation "provides"
 
 ### Version
 ```
-[onaio/slickgrid-cljs "0.0.1-SNAPSHOT"]
+[onaio/slickgrid-cljs "0.0.2-SNAPSHOT"]
 ```
 
 ## Dev
