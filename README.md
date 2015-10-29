@@ -6,7 +6,7 @@ I have used the namespace `cljsjs.slickgrid` as what the installation "provides"
 
 ### Version
 ```
-[prabhasp/slickgrid-cljs "0.0.1"]
+[onaio/slickgrid-cljs "0.0.1-SNAPSHOT"]
 ```
 
 ## Dev
