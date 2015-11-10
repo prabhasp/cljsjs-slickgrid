@@ -1,3 +1,4 @@
 [submodule "src/SlickGrid"]
 	path = src/SlickGrid
-	url = git@github.com:mleibman/SlickGrid.git
+	url = git@github.com:onaio/SlickGrid.git
+	branch = arbitrary-pagination
