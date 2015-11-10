@@ -1,4 +1,4 @@
-(defproject prabhasp/slickgrid-cljs "0.0.1"
+(defproject onaio/slickgrid-cljs "0.0.2-arbitrary-page-counts-SNAPSHOT"
  :description "SlickGrid"
  :url "https://github.com/mleibman/SlickGrid"
  :license {:name "Eclipse Public License"
