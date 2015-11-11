@@ -18,14 +18,24 @@
             maxWidth = maxWidth || 200;
 
             $container = $(grid.getContainerNode());
+            
             $container.on("dblclick.autosize", ".slick-resizable-handle", reSizeColumn);
             $container.keydown(handleControlKeys);
+            $container.ready(function(){
+                setTimeout(function(){
+                    handleOnInitialLoad();
+                }, 10);
+            });
 
             context = document.createElement("canvas").getContext("2d");
         }
 
         function destroy() {
             $container.off();
+        }
+        
+        function handleOnInitialLoad(event) {
+            resizeAllColumns();
         }
 
         function handleControlKeys(event) {
