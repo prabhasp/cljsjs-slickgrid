@@ -23,17 +23,19 @@ npm install uglifyjs
 git submodule init && git submodule update
 ```
 
-3. Minify the slickgrid js files you want into one file, something like:
+3. Build a distribution
+You can build a slickgrid-cljs distribution with or without dependencies and extras by running either of the following from the repository root:
+
 ```
-cd src
-uglifyjs SlickGrid/slick.core.js SlickGrid/slick.grid.js \
-  SlickGrid/slick.dataview.js SlickGrid/controls/slick.pager.js \
-  SlickGrid/lib/jquery-1.7.min.js SlickGrid/lib/jquery.event.drag-2.2.js \
-  -o slick.core-grid-dataview-pager-jquery-jqdrag.min.js
+make
 ```
 
-4. Update `src/deps.cljs` to use the file you just created, and possibly `project.clj` with a package name that you can push to.
+```
+make without-extras
+```
 
-5. `lein deploy clojars` when you are ready with it all.
+4. `lein deploy clojars` when you are ready with it all.
+
+Alternatively, you can add a new make target if you have different build requirements, and update the deps.clj correspondingly, by adding a new entry to the `:foreign-libs` list with appropriate values.
 
 

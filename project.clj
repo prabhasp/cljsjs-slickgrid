@@ -1,4 +1,4 @@
-(defproject onaio/slickgrid-cljs "0.0.2-SNAPSHOT"
+(defproject onaio/slickgrid-cljs "0.0.2"
  :description "SlickGrid"
  :url "https://github.com/mleibman/SlickGrid"
  :license {:name "Eclipse Public License"
