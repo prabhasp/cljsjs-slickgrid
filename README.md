@@ -13,6 +13,12 @@ I have used the namespace `cljsjs.slickgrid` as what the installation "provides"
 
 To re-package a slightly different bunch of slickgrid dependencies, do the following:
 
+0. Install node v16.19.0
+```console
+nvm install v16.19.0
+nvm use v16.19.0
+```
+
 1. Install uglifyjs
 ```
 npm install uglifyjs
