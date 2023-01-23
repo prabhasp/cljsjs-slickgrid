@@ -7,3 +7,10 @@ pom.xml.asc
 *.class
 /.lein-*
 /.nrepl-port
+
+src/build
+.clj-kondo
+.lsp
+node_modules
+package.json
+package-lock.json
